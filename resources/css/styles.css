@@ -209,7 +209,7 @@ body {
     align-items: center;
     position: relative;
     overflow: hidden;
-}
+} 
 
 .hero::before {
     content: '';
@@ -238,7 +238,7 @@ body {
     font-size: var(--font-size-4xl);
     font-weight: 600;
     color: var(--dark-color);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     line-height: 1.1;
     letter-spacing: -0.03em;
 }
@@ -1814,3 +1814,12 @@ body {
         margin-bottom: 2rem;
     }
 } 
+
+.m-2 {
+    margin: 0.5rem;
+}
+
+.align-elements {
+    display: flex;
+    align-items: center;
+}

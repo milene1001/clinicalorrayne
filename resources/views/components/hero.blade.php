@@ -12,7 +12,7 @@
                     </p>
                     
                     <div class="hero__buttons">
-                        <a href="#about" class="btn btn--primary">
+                        <a href="#about" class="btn btn--primary m-2">
                             <i class="fas fa-user-md"></i>
                             Conheça Nossa História
                         </a>

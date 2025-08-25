@@ -26,7 +26,7 @@
                         </div>
                     </div>
                     <div class="about__image">
-                        <img src="img/Lorrayne-14.jpg" alt="Sobre Nós" width="100%" height="100%"> 
+                        <img src="img/Lorrayne-about.jpeg" alt="Sobre Nós" width="100%" height="100%"> 
                         <!-- <div class="about__placeholder">
                             <i class="fas fa-heart"></i>
                         </div> -->
