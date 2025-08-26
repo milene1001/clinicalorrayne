@@ -46,6 +46,24 @@ body {
     background-color: var(--white-color);
 }
 
+/* Prevent horizontal overflow and ensure responsive media */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img, video, canvas, svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+iframe {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -107,6 +125,7 @@ body {
     background-color: var(--primary-color);
     color: var(--white-color);
     box-shadow: 0 4px 12px rgba(152, 110, 74, 0.25);
+    border: 2px solid var(--primary-color);
 }
 
 .btn--primary:hover {
@@ -1134,7 +1153,9 @@ body {
 }
 
 .map__embed iframe {
+    width: 100%;
     border-radius: var(--border-radius-lg);
+    display: block;
 }
 
 /* ===== FOOTER ===== */
@@ -1822,4 +1843,8 @@ body {
 .align-elements {
     display: flex;
     align-items: center;
+}
+
+.btn-size {
+    width: 300px;
 }
