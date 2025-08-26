@@ -27,6 +27,25 @@ function linkAction() {
 
 navLinks.forEach(n => n.addEventListener('click', linkAction));
 
+// Close menu when clicking outside (mobile)
+document.addEventListener('click', (e) => {
+    if (!navMenu) return;
+    if (!navMenu.classList.contains('show-menu')) return;
+    const clickedInsideMenu = navMenu.contains(e.target);
+    const clickedToggle = navToggle && navToggle.contains(e.target);
+    const clickedClose = navClose && navClose.contains(e.target);
+    if (!clickedInsideMenu && !clickedToggle && !clickedClose) {
+        navMenu.classList.remove('show-menu');
+    }
+});
+
+// Close menu with Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && navMenu && navMenu.classList.contains('show-menu')) {
+        navMenu.classList.remove('show-menu');
+    }
+});
+
 // ===== FAQ ACCORDION =====
 const faqItems = document.querySelectorAll('.faq-item');
 
