@@ -512,17 +512,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // ===== COMBO SLIDESHOW FUNCTIONALITY =====
 let currentComboSlide = 0;
-const comboSlides = document.querySelectorAll('.combo-slide');
-const comboDots = document.querySelectorAll('.combo-dot');
+let comboSlides;
+let comboDots;
 
 function showComboSlide(index) {
     // Get current active slide
     const currentSlide = document.querySelector('.combo-slide.active');
     
     // Remove active class from all dots
-    comboDots.forEach(dot => {
-        dot.classList.remove('active');
-    });
+    if (comboDots) {
+        comboDots.forEach(dot => {
+            dot.classList.remove('active');
+        });
+    }
     
     // Add fade-out effect to current slide
     if (currentSlide) {
@@ -535,15 +537,17 @@ function showComboSlide(index) {
     // Show new slide after a short delay
     setTimeout(() => {
         // Hide all slides
-        comboSlides.forEach(slide => {
-            slide.classList.remove('active', 'fade-out');
-        });
+        if (comboSlides) {
+            comboSlides.forEach(slide => {
+                slide.classList.remove('active', 'fade-out');
+            });
+        }
         
         // Show current slide and activate corresponding dot
-        if (comboSlides[index]) {
+        if (comboSlides && comboSlides[index]) {
             comboSlides[index].classList.add('active');
         }
-        if (comboDots[index]) {
+        if (comboDots && comboDots[index]) {
             comboDots[index].classList.add('active');
         }
         
@@ -562,7 +566,6 @@ function changeComboSlide(direction) {
     if (newIndex < 0) {
         newIndex = comboSlides.length - 1;
     }
-    
     showComboSlide(newIndex);
 }
 
@@ -587,12 +590,19 @@ function stopComboSlideInterval() {
 
 // Initialize combo slideshow when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
+    
+    // Initialize combo slides and dots
+    comboSlides = document.querySelectorAll('.combo-slide');
+    comboDots = document.querySelectorAll('.combo-dot');
+    
+    
     // Start auto-advance
     startComboSlideInterval();
     
     // Pause auto-advance when user interacts with navigation
     const comboNavBtns = document.querySelectorAll('.combo-nav-btn');
     const comboDotsContainer = document.querySelector('.combo-dots');
+    
     
     comboNavBtns.forEach(btn => {
         btn.addEventListener('click', () => {
@@ -605,9 +615,9 @@ document.addEventListener('DOMContentLoaded', () => {
         stopComboSlideInterval();
         setTimeout(startComboSlideInterval, 15000); // Resume after 15 seconds
     });
+    
 });
 
-console.log('Clínica Lorrayne Tavares - Website loaded successfully!');
 
 // ===== GIFT SESSION FUNCTIONALITY =====
 document.addEventListener('DOMContentLoaded', () => {
@@ -792,4 +802,9 @@ document.addEventListener('DOMContentLoaded', () => {
 }); 
 
 window.openProcedureModal = openProcedureModal;
-window.closeProcedureModal = closeProcedureModal; 
+window.closeProcedureModal = closeProcedureModal;
+
+// Make combo slider functions globally accessible
+window.changeComboSlide = changeComboSlide;
+window.goToComboSlide = goToComboSlide;
+window.showComboSlide = showComboSlide; 

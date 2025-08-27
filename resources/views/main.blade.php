@@ -83,6 +83,5 @@
     <!-- Footer -->
     <x-footer />
 
-    @vite(['resources/js/script.js'])
 </body>
 </html> 

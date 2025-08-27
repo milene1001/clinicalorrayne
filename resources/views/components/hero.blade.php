@@ -21,11 +21,11 @@
                     </p>
                     
                     <div class="hero__buttons">
-                        <a href="#about" class="btn btn--primary btn-size m-2">
+                        <a href="#about" class="btn btn--secondary btn-size m-2">
                             <i class="fas fa-user-md"></i>
                             Conheça Nossa História
                         </a>
-                        <a href="https://wa.me/5581995095151" class="btn btn--secondary btn-size" target="_blank">
+                        <a href="https://wa.me/5581995095151" class="btn btn--primary btn-size" target="_blank">
                             <i class="fab fa-whatsapp"></i>
                             Agende sua Consulta
                         </a>
