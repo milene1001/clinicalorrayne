@@ -1027,6 +1027,9 @@ iframe {
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
     border: 1px solid rgba(152, 110, 74, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .procedure-card:hover {
@@ -1060,6 +1063,9 @@ iframe {
 
 .procedure-card__content {
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .procedure-card__content h3 {
@@ -1088,12 +1094,69 @@ iframe {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     width: 100%;
     box-shadow: 0 4px 12px rgba(152, 110, 74, 0.25);
+    margin-top: auto;
 }
 
 .procedure-card__btn:hover {
     background-color: var(--secondary-color);
     transform: translateY(-2px);
     box-shadow: 0 8px 24px rgba(152, 110, 74, 0.35);
+}
+
+/* Mobile-first responsive design for procedure cards */
+@media (max-width: 768px) {
+    .procedure-cards__grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+    }
+    
+    .procedure-card__content {
+        padding: 1.5rem;
+    }
+    
+    .procedure-card__content h3 {
+        font-size: var(--font-size-large);
+        margin-bottom: 0.75rem;
+    }
+    
+    .procedure-card__content p {
+        margin-bottom: 1rem;
+        font-size: var(--font-size-small);
+    }
+    
+    .procedure-card__btn {
+        padding: 0.75rem 1.25rem;
+        font-size: var(--font-size-small);
+    }
+}
+
+@media (max-width: 480px) {
+    .procedure-cards__grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    
+    .procedure-card__content {
+        padding: 1.25rem;
+    }
+    
+    .procedure-card__content h3 {
+        font-size: var(--font-size-normal);
+        margin-bottom: 0.5rem;
+    }
+    
+    .procedure-card__content p {
+        margin-bottom: 0.75rem;
+        font-size: var(--font-size-small);
+        line-height: 1.5;
+    }
+    
+    .procedure-card__btn {
+        padding: 0.75rem 1rem;
+        font-size: var(--font-size-small);
+    }
 }
 
 /* ===== MODAL ===== */
