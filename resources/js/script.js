@@ -52,17 +52,32 @@ const faqItems = document.querySelectorAll('.faq-item');
 faqItems.forEach(item => {
     const question = item.querySelector('.faq__question');
     
-    question.addEventListener('click', () => {
+    // Check if event listener already exists
+    if (question.dataset.faqListener === 'true') {
+        return;
+    }
+    
+    // Mark this element as having a listener
+    question.dataset.faqListener = 'true';
+    
+    question.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
         const isActive = item.classList.contains('active');
         
-        // Close all FAQ items
-        faqItems.forEach(faqItem => {
-            faqItem.classList.remove('active');
-        });
-        
-        // Open clicked item if it wasn't active
         if (!isActive) {
-            item.classList.add('active');
+            // Close all FAQ items first
+            faqItems.forEach(faqItem => {
+                faqItem.classList.remove('active');
+            });
+            
+            // Small delay to ensure smooth transition
+            setTimeout(() => {
+                item.classList.add('active');
+            }, 50);
+        } else {
+            // If already active, just close it
+            item.classList.remove('active');
         }
     });
 });
@@ -85,7 +100,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         
-        const target = document.querySelector(window.getAttribute('href'));
+        const target = document.querySelector(this.getAttribute('href'));
         if (target) {
             const headerHeight = document.querySelector('.header').offsetHeight;
             const targetPosition = target.offsetTop - headerHeight;

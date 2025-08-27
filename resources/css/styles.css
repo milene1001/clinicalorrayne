@@ -3,11 +3,11 @@
     --primary-color: #986e4a;
     --secondary-color: #d9bd84;
     --accent-color: #eadcc4;
-    --dark-color: #000000;
+    --dark-color: #1a1a1a;
     --white-color: #ffffff;
-    --gray-color: #f8f9fa;
-    --text-color: #333333;
-    --text-light: #666666;
+    --gray-color: #f7f7f5;
+    --text-color: #2b2b2b;
+    --text-light: #6b6b6b;
     
     --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     --font-size-small: 0.875rem;
@@ -119,12 +119,13 @@ iframe {
     text-align: center;
     justify-content: center;
     letter-spacing: 0.01em;
+    min-height: 48px;
 }
 
 .btn--primary {
     background-color: var(--primary-color);
     color: var(--white-color);
-    box-shadow: 0 4px 12px rgba(152, 110, 74, 0.25);
+    box-shadow: 0 4px 12px rgba(152, 110, 4, 0.25);
     border: 2px solid var(--primary-color);
 }
 
@@ -145,7 +146,7 @@ iframe {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #986e4a;
+    background-color: var(--primary-color);
     backdrop-filter: blur(10px);
     z-index: 1000;
     transition: var(--transition);
@@ -273,6 +274,20 @@ iframe {
     margin-bottom: 3rem;
     line-height: 1.6;
     max-width: 500px;
+}
+
+/* Hero buttons: equal size, centered, responsive */
+.hero__buttons {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    justify-items: center;
+    margin-top: 0.5rem;
+}
+
+.hero__buttons .btn {
+    width: 100%;
+    max-width: 320px;
 }
 
 .hero__image {
@@ -553,7 +568,8 @@ iframe {
     padding: 0 1.5rem;
     max-height: 0;
     overflow: hidden;
-    transition: var(--transition);
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+    opacity: 0;
 }
 
 .faq__answer p {
@@ -562,7 +578,8 @@ iframe {
 }
 
 .faq-item.active .faq__answer {
-    max-height: 200px;
+    max-height: 300px;
+    opacity: 1;
 }
 
 .faq-item.active .faq__question i {
@@ -1472,7 +1489,7 @@ iframe {
 
 /* ===== GIFT SESSION SECTION ===== */
 .gift-session {
-    background: linear-gradient(135deg, #f8f9fa 0%, #eadcc4 100%);
+    background: linear-gradient(135deg, var(--gray-color) 0%, var(--accent-color) 100%);
     position: relative;
 }
 
