@@ -1,4 +1,13 @@
         <section class="hero section" id="home">
+            <!-- Video Background -->
+            <div class="hero__video-background">
+                <video autoplay muted loop playsinline class="hero__video">
+                    <source src="img/back.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="hero__video-overlay"></div>
+            </div>
+            
             <div class="hero__container container">
                 <div class="hero__content">
                     <h1 class="hero__title">
