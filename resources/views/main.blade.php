@@ -28,9 +28,6 @@
         <!-- Combos Section -->
         <x-combos />
 
-        <!-- Gift a Session Section -->
-        <x-gift-session />
-
         <!-- Procedure Cards Section -->
         <x-procedure-cards />
 

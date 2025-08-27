@@ -16,9 +16,6 @@
                         <a href="#combos" class="nav__link">Combos</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#gift-session" class="nav__link">Presente</a>
-                    </li>
-                    <li class="nav__item">
                         <a href="#contact" class="nav__link">Contato</a>
                     </li>
                 </ul>

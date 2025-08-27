@@ -22,10 +22,6 @@
                         </a>
                     </div>
                 </div>
-                
-                <div class="hero__image">
-                    <img src="img/logolorrayne.png" alt="Clínica Lorrayne Tavares" class="hero__logo">
-                </div>
             </div>
             
             <div class="hero__scroll">
