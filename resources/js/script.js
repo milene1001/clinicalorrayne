@@ -330,7 +330,13 @@ document.addEventListener('DOMContentLoaded', () => {
 const procedureData = {
     'skin-premium': {
         title: 'Skin Premium',
-        description: 'A Skin Premium é a nossa limpeza de pele personalizada. Nela realizamos a utilização dos produtos e das etapas de forma personalizada, de acordo com as necessidades da sua pele. No procedimento está incluso a extração de cravos e milium. Conseguimos devolver saúde a sua pele de forma eficiente e sem agredir.',
+        description: 'A Skin Premium é a nossa limpeza de pele personalizada, desenvolvida de acordo com as necessidades específicas da sua pele. No procedimento está incluso:',
+        options: [
+            'Utilização de produtos personalizados',
+            'Etapas adaptadas ao seu tipo de pele',
+            'Extração de cravos e milium',
+            'Tratamento eficiente sem agressão'
+        ],
         duration: '60-90 minutos',
         sessions: '6-8 sessões',
         price1: '1 sessão: R$ 150',
@@ -339,7 +345,13 @@ const procedureData = {
     },
     'microagulhamento': {
         title: 'Microagulhamento',
-        description: 'O Microagulhamento também é conhecido como Indução Percutânea de Colágeno (IPC). É uma técnica que tem por objetivo tratar cicatrizes de acne, manchas, linhas e rugas finasestria e flacidez por meio do estimulo de colágeno causado napele. Sendo associado a técnica de drug-delivry que facilita apermeação de ativos na pele, potencializando os resultados..',
+        description: 'O Microagulhamento, também conhecido como Indução Percutânea de Colágeno (IPC), é uma técnica que estimula a produção de colágeno na pele. O procedimento inclui:',
+        options: [
+            'Tratamento de cicatrizes de acne',
+            'Redução de manchas e linhas finas',
+            'Tratamento de rugas e estrias',
+            'Associação com drug-delivery para potencializar resultados'
+        ],
         duration: '60-90 minutos',
         sessions: '6-8 sessões',
         price1: '1 sessão: R$ 200',
@@ -348,7 +360,13 @@ const procedureData = {
     },
     'peeling': {
         title: 'Peeling Químico',
-        description: 'O Peeling Químico é um procedimento feito por meio da aplicação de agentes químicos, como ácidos, que promovem uma remoção da camada mais superficial da pele, estimulando a renovação celular melhorando a aparência estética dessa pele. Com o objetivo de tratar manchas, linhas e rugas finas, promover uniformização da textura e do tom da pele.',
+        description: 'O Peeling Químico é um procedimento que utiliza agentes químicos para promover renovação celular da pele. O tratamento inclui:',
+        options: [
+            'Remoção da camada superficial da pele',
+            'Estimulação da renovação celular',
+            'Tratamento de manchas e linhas finas',
+            'Uniformização da textura e tom da pele'
+        ],
         duration: '45-60 minutos',
         sessions: '4-6 sessões',
         price1: '1 sessão: R$ 200',
@@ -357,7 +375,14 @@ const procedureData = {
     },
     'microneedling': {
         title: 'Tratamento Facial Personalizado',
-        description: 'Sua Pele Cuidada é um protocolo de tratamento facial com 4 sessões, desenvolvido de forma personalizada as necessidades da sua pele. Tem como objetivo promover um protocolo de tratamento para peles acneicas, com cicatrizes, manchas, descamações, irritações e sensibilização. Podendo estar incluso diversos de nossos tratamentos, que serão escolhidos de acordo com o que sua pele precisa. Onde devolveremos saúde para suaple sem causar novas agressões..',
+        description: 'Protocolo personalizado com 4 sessões desenvolvido especificamente para as necessidades da sua pele. O tratamento inclui:',
+        options: [
+            'Protocolo para peles acneicas',
+            'Tratamento de cicatrizes e manchas',
+            'Redução de descamações e irritações',
+            'Associação de diversos tratamentos conforme necessidade',
+            'Tratamento sem causar novas agressões'
+        ],
         duration: '60-75 minutos',
         sessions: '6-10 sessões',
         price1: '4 sessões: R$ 720',
@@ -365,39 +390,88 @@ const procedureData = {
     },
     'hidrolipoclasia': {
         title: 'Drenagem Linfática - Facial e Corporal',
-        description: 'A Drenagem Linfática Manual, é uma técnica de massagem feita com pressões leves, movimentos lentos, intermitentes e relaxantes, seguindo o trajeto do sistema linfático. Tem como objetivo a redução do inchaço, melhorar a vascularização eoxigenação dos tecidos, reduz a aparência das celulites até grau2, melhora o funcionamento intestinal, reduz o cansaço edormência nas pernas, além de relaxar e auxiliar nossa imunidade.cnologia avançada para redução de gordura localizada através de ultrassom focalizado. Tratamento não invasivo e eficaz para modelagem corporal.',
+        description: 'A Drenagem Linfática Manual é uma técnica de massagem com pressões leves e movimentos lentos que segue o trajeto do sistema linfático. O tratamento inclui:',
+        options: [
+            'Redução do inchaço e retenção de líquidos',
+            'Melhora da vascularização e oxigenação dos tecidos',
+            'Redução da aparência das celulites até grau 2',
+            'Melhora do funcionamento intestinal',
+            'Redução do cansaço e dormência nas pernas',
+            'Relaxamento e auxílio à imunidade'
+        ],
         price1: '1 sessão: R$ 100',
         icon: 'fas fa-weight-scale'
     },
     'dermo-redux': {
         title: 'Massagem Relaxante',
-        description: 'A Massagem Relaxante é realizada com movimentos suaves,firmes por meio de manobras de deslizamento, batimento,amassamento, fricções e desativação de pontos de gatilho por toda a área que você deseja realizar a sessão. Tem como objetivo promover relaxamento, redução de contraturas musculares, melhorar a oxigenação do tecido, alongamento muscular, redução de dores de cabeça, cãibras, dentre outros inúmeros benefícios. corporal completo para redução de medidas e modelagem. Combina diferentes técnicas para resultados visíveis e duradouros.',
+        description: 'A Massagem Relaxante é realizada com movimentos suaves e firmes através de técnicas específicas. O tratamento inclui:',
+        options: [
+            'Manobras de deslizamento e batimento',
+            'Técnicas de amassamento e fricções',
+            'Desativação de pontos de gatilho',
+            'Promoção de relaxamento profundo',
+            'Redução de contraturas musculares',
+            'Melhora da oxigenação e alongamento muscular',
+            'Redução de dores de cabeça e cãibras'
+        ],
         price1: '1 sessão: R$ 100',
         icon: 'fas fa-heart-pulse'
     },
     'day-spa': {
         title: 'Massagem Modeladora',
-        description: 'A Massagem Modeladora é uma técnica que utiliza movimentos firmes, rápidos e com pressão continua. A depender da região que você deseja realizar a massagem, terá como objetivo modelar o corpo, destacar a silhueta, reduzir medidas, melhorar o aspecto das celulites, ativar o metabolismo, melhorar o aspecto da pele, melhora a oxigenação tecidual e a circulaçãosanguínea.Tratamento específico para celulite e flacidez, utilizando tecnologia de radiofrequência para tonificar e firmar a pele.',
+        description: 'A Massagem Modeladora utiliza movimentos firmes, rápidos e com pressão contínua para modelar o corpo. O tratamento inclui:',
+        options: [
+            'Modelagem corporal e destaque da silhueta',
+            'Redução de medidas e contorno corporal',
+            'Melhora do aspecto das celulites',
+            'Ativação do metabolismo',
+            'Melhora do aspecto da pele',
+            'Melhora da oxigenação tecidual',
+            'Melhora da circulação sanguínea'
+        ],
         price1: '1 sessão: R$ 100',
         icon: 'fas fa-spa'
     },
     'ventosa': {
         title: 'Ventosaterapia',
-        description: 'A Ventosaterapia é uma técnica natural, no qual é realizada com auxilio das ventosas que criam um efeito de vácuo (pressão negativa) sugando a pele e promovendo um aumento do diâmetro dos vasos sanguíneos locais. Tem como objetivo melhorar a circulação sanguínea, promove melhora da oxigenação tecidual, liberação miofascial, redução de contraturas musculares, reduz dores de cabeça, torcicolos, cólicas menstruais, dentre outros inúmeros benefícios..',
+        description: 'A Ventosaterapia é uma técnica natural que utiliza ventosas para criar pressão negativa, aumentando o diâmetro dos vasos sanguíneos. O tratamento inclui:',
+        options: [
+            'Melhora da circulação sanguínea',
+            'Melhora da oxigenação tecidual',
+            'Liberação miofascial',
+            'Redução de contraturas musculares',
+            'Redução de dores de cabeça e torcicolos',
+            'Alívio de cólicas menstruais',
+            'Diversos outros benefícios terapêuticos'
+        ],
         price1: '1 sessão: R$ 100',
         icon: 'fas fa-spa'
     },
     
     'clube': {
         title: 'Clube de Massagem',
-        description: 'Esse é um Combo de Sessões desenvolvido para você que deseja se manter assídua nas suas sessões e realiza-las de forma mensal. Tendo duas formas de você adquirir esse combo, o primeiro é de 4 sessões (realizada uma vez por semana de forma obrigatória) ou 8 sessões (realizada duas vezes por semana de forma obrigatória), com validade de 30 dias após a data de pagamento. Podendo escolher entre: Massagem Relaxante Drenagem Linfática Massagem modeladora.',
+        description: 'Combo de sessões mensais desenvolvido para manter a assiduidade e potencializar resultados. O pacote inclui:',
+        options: [
+            'Opção 1: 4 sessões (uma vez por semana)',
+            'Opção 2: 8 sessões (duas vezes por semana)',
+            'Validade de 30 dias após pagamento',
+            'Escolha entre: Massagem Relaxante, Drenagem Linfática ou Massagem Modeladora'
+        ],
         price1: '4 sessões: R$ 360',
         price2: '8 sessões: R$ 720',
         icon: 'fas fa-spa'
     },
     'hidrolipo': {
         title: 'Hidrolipoclasia 360°',
-        description: 'É um protocolo de tratamento desenvolvido para melhorar o aspecto estético do seu corpo como um todo. Contém 10 sessões personalizadas de acordo com as necessidades da região que você deseja tratar. Tem como objetivo promover a eliminação da gordura localizada e tratar disfunções associadas. Não contabilizamos o protocolo por área, com o intuito de proporcionar uma harmonização corporal. As áreas serão definidas mediante avaliação e levando em consideração a queixa principal da paciente.',
+        description: 'Protocolo de tratamento corporal com 10 sessões personalizadas para harmonização estética completa. O tratamento inclui:',
+        options: [
+            'Melhora do aspecto estético corporal como um todo',
+            'Eliminação de gordura localizada',
+            'Tratamento de disfunções associadas',
+            'Protocolo não contabilizado por área',
+            'Harmonização corporal completa',
+            'Áreas definidas mediante avaliação e queixa principal'
+        ],
         price1: '1 sessão: R$ 180',
         price2: '10 sessões: R$ 1500',
         icon: 'fas fa-weight-scale'
@@ -405,36 +479,66 @@ const procedureData = {
     
     'redux': {
         title: 'Dermo Redux',
-        description: 'É um protocolo de tratamento para gordura localizada. Contém 10 sessões personalizadas de acordo com a necessidade da área que você deseja tratar. Nesse protocolo teremos associações de eletroterapias e técnicas manuais. Tem como objetivo promover a eliminação da gordura localizada e promover melhora do aspecto estético da região tratada. É um protocolo realizado por área, que será determinada mediante avaliação e queixa principal do paciente.',
+        description: 'Protocolo de tratamento para gordura localizada com 10 sessões personalizadas. O tratamento inclui:',
+        options: [
+            'Associação de eletroterapias e técnicas manuais',
+            'Eliminação de gordura localizada',
+            'Melhora do aspecto estético da região tratada',
+            'Protocolo realizado por área específica',
+            'Área determinada mediante avaliação e queixa principal'
+        ],
         price1: '1 sessão: R$ 150',
         price2: '10 sessões: R$ 1200',
         icon: 'fas fa-weight-scale'
     },
     'cellut': {
         title: 'Dermo Cellut',
-        description: 'É um protocolo de tratamento para redução da celulite e melhora das disfunções associadas. Contém 10 sessões personalizadas de acordo com a necessidade da área que você deseja tratar. Nesse protocolo teremos associações de eletroterapias e técnicas manuais. Tem como objetivo promover a eliminação da gordura localizada e promover melhora do aspecto estético da região tratada. É um protocolo realizado por área, que será determinada mediante avaliação e queixa principal do paciente.',
+        description: 'Protocolo de tratamento para redução da celulite e melhora das disfunções associadas. O tratamento inclui:',
+        options: [
+            '10 sessões personalizadas por área',
+            'Associação de eletroterapias e técnicas manuais',
+            'Redução da celulite',
+            'Melhora das disfunções associadas',
+            'Eliminação de gordura localizada',
+            'Melhora do aspecto estético da região tratada',
+            'Área determinada mediante avaliação e queixa principal'
+        ],
         price1: '1 sessão: R$ 150',
         price2: '10 sessões: R$ 1200',
         icon: 'fas fa-weight-scale'
     },
     'strit': {
         title: 'Dermo Strit',
-        description: 'É um protocolo de tratamento para estrias albas (brancas) ou rubras (vermelhas) . Contém 4 sessões que podem ser realizadas por meio da técnica de microagulhamento associada ao drug-delivery ou com a técnica a vácuo. Tem como objetivo promover o tratamento de até 80% das estrias da região que você deseja tratar desde a primeira sessão. É um protocolo realizado por área,que será determinada mediante avaliação e queixa principal do paciente.',
+        description: 'Protocolo de tratamento para estrias albas (brancas) ou rubras (vermelhas) com 4 sessões. O tratamento inclui:',
+        options: [
+            'Técnica de microagulhamento associada ao drug-delivery',
+            'Alternativa com técnica a vácuo',
+            'Tratamento de até 80% das estrias desde a primeira sessão',
+            'Protocolo realizado por área específica',
+            'Área determinada mediante avaliação e queixa principal'
+        ],
         price1: '1 sessão: R$ 200',
         price2: '4 sessões: R$ 720',
         icon: 'fas fa-weight-scale'
-       
     },
         'eletro': {
             title: 'Eletroterapia',
-            description: 'São equipamentos que podem ser usados para associar a técnicas que proporcionamos aqui na clínica, a uma massagem por exemplo. Temos equipamentos que vão auxiliar na melhora do contorno corporal (endermo), melhorar o aspecto da pele e tônus muscular (corrente russa), auxiliar na eliminação da gordura localizada (ultrassom ou eletrolipólise). Cada equipamento é aplicado por área, você pode associar mais de um e será determinado mediante avaliação, necessidade da área que deseja tratar e queixa principal do paciente.',
+            description: 'Equipamentos especializados que podem ser associados aos tratamentos da clínica. O tratamento inclui:',
+            options: [
+                'Endermo: melhora do contorno corporal',
+                'Corrente Russa: melhora da pele e tônus muscular',
+                'Ultrassom: eliminação de gordura localizada',
+                'Eletrolipólise: redução de gordura localizada',
+                'Cada equipamento aplicado por área específica',
+                'Possibilidade de associar múltiplos equipamentos',
+                'Tratamento determinado mediante avaliação e necessidade'
+            ],
             price1: 'Por área: R$ 100',
             icon: 'fas fa-weight-scale'
-
         },
         'posfacial': {
-            title: 'Pós Operatorio Facial',
-            description: 'É a realizado de forma personalizada a resposta individual de cicatrização de cada paciente. Contém técnicas que vão prevenir e/ou solucionar possíveis complicações após o procedimento cirúrgico de forma eficiente. Dentre elas estão inclusas:',
+            title: 'Pós Operatório Facial',
+            description: 'Tratamento personalizado para acelerar a cicatrização e evitar complicações após procedimento cirúrgico. O tratamento inclui:',
             options: [
                 'Técnicas Mecanomoduladoras',
                 'Tapping/Bandagem',
@@ -445,8 +549,8 @@ const procedureData = {
             icon: 'fas fa-weight-scale'
         },
         'poscorporal': {
-        title: 'Pós Operatorio Corporal',
-        description: 'É a realizado de forma personalizada a resposta individual de cicatrização de cada paciente. Contém técnicas que vão prevenir e/ou solucionar possíveis complicações após o procedimento cirúrgico de forma eficiente. Dentre elas estão inclusas:',
+        title: 'Pós Operatório Corporal',
+        description: 'Tratamento personalizado para acelerar a cicatrização e evitar complicações após procedimento cirúrgico. O tratamento inclui:',
         options: [
             'Técnicas Mecanomoduladoras',
             'Tapping/Bandagem',

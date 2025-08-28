@@ -127,11 +127,11 @@
                         </div>
                     </div>
                     
-                    <div class="procedure-card" data-procedure="clube">
-                        <img src="img/celulite.webp" alt="Ventosaterapia" width="100%">
+                    <div class="procedure-card" data-procedure="cellut">
+                        <img src="img/celulite.webp" alt="Dermo Cellut" width="100%">
                         <div class="procedure-card__content">
                             <h3>Dermo Cellut</h3>
-                            <p>Tratamento personalizado para redução da celulite e melhora das disfunções associadas, conforme avaliação.</p>
+                            <p>Protocolo com 10 sessões personalizadas para redução da celulite e melhora das disfunções associadas. Combina eletroterapias e técnicas manuais, realizado por área específica mediante avaliação.</p>
                             <button class="procedure-card__btn" onclick="openProcedureModal('cellut')">
                                 Saiba mais
                             </button>
