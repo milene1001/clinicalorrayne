@@ -1097,12 +1097,34 @@ iframe {
     opacity: 0;
     transform: translateX(30px);
     transition: all 0.8s ease-in-out;
+    cursor: pointer;
 }
 
 .combo-slide.active {
     display: block;
     opacity: 1;
     transform: translateX(0);
+    transition: all 0.8s ease-in-out;
+}
+
+.combo-slide.active:hover {
+    transform: translateX(0) scale(1.01);
+}
+
+/* Ensure smooth transitions for all combo elements */
+.combo-slide,
+.combo-slide.active,
+.combo-slide.fade-out {
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Add subtle hover effect to indicate clickability */
+.combo-slide.active .combo-card {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.combo-slide.active:hover .combo-card {
+    box-shadow: 0 12px 40px rgba(152, 110, 74, 0.2);
 }
 
 .combo-slide.fade-out {
@@ -1120,6 +1142,7 @@ iframe {
     position: relative;
     overflow: hidden;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    user-select: none;
 }
 
 .combo-card::before {
@@ -1891,6 +1914,7 @@ iframe {
     
     .combo-card {
         padding: 2rem 1.5rem;
+        -webkit-tap-highlight-color: transparent;
     }
     
     .combo-card__header h3 {
@@ -1908,6 +1932,15 @@ iframe {
     .combo-nav-btn {
         width: 45px;
         height: 45px;
+    }
+    
+    /* Touch-friendly effects for mobile */
+    .combo-slide.active:active {
+        transform: translateX(0) scale(1.01);
+    }
+    
+    .combo-card:active {
+        transform: translateY(-2px);
     }
 
     .modal__content {
@@ -1951,6 +1984,15 @@ iframe {
     .btn--large {
         padding: 0.875rem 1.5rem;
         font-size: var(--font-size-normal);
+    }
+    
+    /* Enhanced touch interactions for small screens */
+    .combo-slide.active {
+        cursor: pointer;
+    }
+    
+    .combo-slide.active:active {
+        transform: translateX(0) scale(1.005);
     }
 }
 

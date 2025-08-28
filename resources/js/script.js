@@ -575,18 +575,7 @@ function goToComboSlide(index) {
     }
 }
 
-// Auto-advance slides every 8 seconds
-let comboSlideInterval;
-
-function startComboSlideInterval() {
-    comboSlideInterval = setInterval(() => {
-        changeComboSlide(1);
-    }, 5000);
-}
-
-function stopComboSlideInterval() {
-    clearInterval(comboSlideInterval);
-}
+// Manual advance only - no automatic sliding
 
 // Initialize combo slideshow when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
@@ -595,29 +584,45 @@ document.addEventListener('DOMContentLoaded', () => {
     comboSlides = document.querySelectorAll('.combo-slide');
     comboDots = document.querySelectorAll('.combo-dot');
     
+    // Add click-to-advance functionality to combo cards
+    initComboCardClicks();
     
-    // Start auto-advance
-    startComboSlideInterval();
-    
-    // Pause auto-advance when user interacts with navigation
+    // Navigation buttons remain fully functional
     const comboNavBtns = document.querySelectorAll('.combo-nav-btn');
     const comboDotsContainer = document.querySelector('.combo-dots');
     
-    
     comboNavBtns.forEach(btn => {
         btn.addEventListener('click', () => {
-            stopComboSlideInterval();
-            setTimeout(startComboSlideInterval, 15000); // Resume after 15 seconds
+            // Navigation buttons work normally
         });
     });
     
     comboDotsContainer.addEventListener('click', () => {
-        stopComboSlideInterval();
-        setTimeout(startComboSlideInterval, 15000); // Resume after 15 seconds
+        // Dots work normally
     });
     
 });
 
+// ===== COMBO CARD CLICK TO ADVANCE =====
+function initComboCardClicks() {
+    if (!comboSlides) return;
+    
+    comboSlides.forEach((slide, index) => {
+        slide.addEventListener('click', (e) => {
+            // Don't advance if clicking on interactive elements
+            if (e.target.closest('a') || e.target.closest('button') || e.target.closest('i')) {
+                return;
+            }
+            
+            // Advance to next slide
+            const nextIndex = (index + 1) % comboSlides.length;
+            showComboSlide(nextIndex);
+        });
+        
+        // Add visual feedback for clickable areas
+        slide.style.cursor = 'pointer';
+    });
+}
 
 // ===== GIFT SESSION FUNCTIONALITY =====
 document.addEventListener('DOMContentLoaded', () => {
