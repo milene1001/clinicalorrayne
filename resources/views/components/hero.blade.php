@@ -17,7 +17,7 @@
                         Fisioterapia Dermato Funcional
                     </p>
                     <p class="hero__subtitle">
-                        Cuidar da sua pele é cuidar de si mesmo
+                        Promovo transformação e elevo sua autoestima com resultados reais e Protocolos Personalizados.
                     </p>
                     
                     <div class="hero__buttons">

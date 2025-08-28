@@ -1,8 +1,12 @@
         <section class="about section" id="about">
             <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Sobre Nós</h2>
+                    <p class="section__subtitle">Conheça nossa história e missão</p>
+                </div>
+                
                 <div class="about__content">
                     <div class="about__text">
-                        <h2 class="section__title">Sobre Nós</h2>
                         <div class="about__description">
                             <p class="about__greeting">
                                 <strong>Prazer, eu sou a Dra. Lorrayne Tavares!</strong>

@@ -1,9 +1,13 @@
        <!-- Consultation Section -->
        <section class="consultation section">
             <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Consulta Avaliativa</h2>
+                    <p class="section__subtitle">Avaliação completa e personalizada para seu tratamento</p>
+                </div>
+                
                 <div class="consultation__content">
                     <div class="consultation__info">
-                        <h2 class="section__title">Consulta Avaliativa</h2>
                         <div class="consultation__details">
                             <div class="consultation__duration">
                                 <i class="fas fa-clock"></i>
@@ -30,11 +34,6 @@
                             <i class="fab fa-whatsapp"></i>
                             Agendar Consulta
                         </a>
-                    </div>
-                    <div class="consultation__image">
-                        <div class="consultation__placeholder">
-                            <i class="fas fa-stethoscope"></i>
-                        </div>
                     </div>
                 </div>
             </div>
