@@ -42,7 +42,7 @@
                     <div class="procedure-card" data-procedure="microneedling">
                         <img src="img/tratamentof.jpg" alt="Tratamento Facial Personalizado" width="100%">
                         <div class="procedure-card__content">
-                            <h3>Tratamento Facial Personalizado</h3>
+                            <h3>Sua Pele Cuidada - Tratamento Facial Personalizado</h3>
                             <p>Protocolo facial personalizado para tratar acne, manchas e sensibilidade da pele.</p>
                             <button class="procedure-card__btn" onclick="openProcedureModal('microneedling')">
                                 Saiba mais

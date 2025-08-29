@@ -1,5 +1,8 @@
        <!-- Consultation Section -->
        <section class="consultation section">
+            <div class="consultation__background">
+                <div class="consultation__overlay"></div>
+            </div>
             <div class="container">
                 <div class="section__header">
                     <h2 class="section__title">Consulta Avaliativa</h2>
@@ -30,7 +33,7 @@
                             <li><i class="fas fa-check"></i> Resumo em PDF com resultados e plano de tratamento</li>
                         </ul>
                         
-                        <a href="https://wa.me/5581995095151" class="btn btn--primary" target="_blank">
+                        <a href="https://wa.me/5581979008477" class="btn btn--primary" target="_blank">
                             <i class="fab fa-whatsapp"></i>
                             Agendar Consulta
                         </a>

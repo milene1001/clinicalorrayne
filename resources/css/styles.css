@@ -856,6 +856,32 @@ iframe {
 .consultation {
     background: linear-gradient(135deg, var(--white-color) 0%, var(--gray-color) 100%);
     position: relative;
+    overflow: hidden;
+}
+
+.consultation__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, 
+        rgba(152, 110, 74, 0.03) 0%, 
+        rgba(217, 189, 132, 0.05) 25%, 
+        rgba(234, 220, 196, 0.08) 50%, 
+        rgba(255, 255, 255, 0.95) 100%);
+    z-index: 1;
+}
+
+.consultation__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="%23986e4a" opacity="0.02"/><circle cx="75" cy="75" r="1" fill="%23d9bd84" opacity="0.02"/><circle cx="50" cy="10" r="0.5" fill="%23eadcc4" opacity="0.03"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.6;
+    z-index: 2;
 }
 
 .consultation__content {
@@ -865,6 +891,8 @@ iframe {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 2rem;
+    position: relative;
+    z-index: 3;
 }
 
 .consultation__info {
@@ -875,6 +903,11 @@ iframe {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(152, 110, 74, 0.1);
+    border: 1px solid rgba(152, 110, 74, 0.1);
 }
 
 .consultation__info .btn {
@@ -2100,6 +2133,8 @@ iframe {
         justify-content: flex-start;
         text-align: left;
         padding: 0 1rem;
+        display: flex;
+        align-items: baseline;
     }
 
     .consultation__details {
@@ -2231,6 +2266,17 @@ iframe {
     .consultation__info {
         padding: 1.5rem 0;
         gap: 1.25rem;
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(6px);
+        border-radius: 12px;
+    }
+    
+    .consultation__background {
+        background: linear-gradient(135deg, 
+            rgba(152, 110, 74, 0.05) 0%, 
+            rgba(217, 189, 132, 0.07) 25%, 
+            rgba(234, 220, 196, 0.1) 50%, 
+            rgba(255, 255, 255, 0.98) 100%);
     }
     
     .consultation__details {

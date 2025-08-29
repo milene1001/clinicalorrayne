@@ -12,7 +12,7 @@
                             <i class="fas fa-chevron-down"></i>
                         </div>
                         <div class="faq__answer">
-                            <p>Entre em contato via WhatsApp (81) 99509-5151 ou envie um email para clinicalorraynetavares@gmail.com</p>
+                            <p>Entre em contato via WhatsApp (81) 97900-8477.</p>
                         </div>
                     </div>
                     

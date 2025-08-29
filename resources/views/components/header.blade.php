@@ -26,7 +26,7 @@
             </div>
 
             <div class="nav__btns align-elements">
-                <a href="https://wa.me/5581995095151" class="btn btn--primary nav__cta" target="_blank">
+                <a href="https://wa.me/5581979008477" class="btn btn--primary nav__cta" target="_blank">
                     <i class="fab fa-whatsapp"></i>
                     Agendar
                 </a>

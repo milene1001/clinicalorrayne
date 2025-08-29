@@ -4,14 +4,14 @@
                 <div class="footer__section">
                     <h3>Clínica Lorrayne Tavares</h3>
                     <p>Fisioterapia Dermato Funcional</p>
-                    <p>Cuidar da sua pele é cuidar de si mesmo</p>
+                    <p>Promovo transformação e elevo sua autoestima com resultados reais e Protocolos Personalizados. </p>
                 </div>
                 
                 <div class="footer__section">
                     <h3>Contato</h3>
                     <div class="contact-info">
-                        <a href="https://wa.me/5581995095151" target="_blank" rel="noopener noreferrer" class="contact-link">
-                            <i class="fab fa-whatsapp"></i> (81) 99509-5151
+                        <a href="https://wa.me/5581979008477" target="_blank" rel="noopener noreferrer" class="contact-link">
+                            <i class="fab fa-whatsapp"></i> (81) 97900-8477
                         </a>
                         <a href="mailto:clinicalorraynetavares@gmail.com" class="contact-link">
                             <i class="fas fa-envelope"></i> clinicalorraynetavares@gmail.com

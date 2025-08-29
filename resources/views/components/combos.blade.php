@@ -30,7 +30,7 @@
                                         <li><i class="fas fa-check"></i> Corrente russa</li>
                                     </ul>
                                 </div>
-                                <a href="https://wa.me/5581995095151" class="btn btn--primary" target="_blank">
+                                <a href="https://wa.me/5581979008477" class="btn btn--primary" target="_blank">
                                     <i class="fab fa-whatsapp"></i>
                                     Agendar Combo
                                 </a>
@@ -55,7 +55,7 @@
                                         <li><i class="fas fa-check"></i> Drenagem facial</li>
                                     </ul>
                                 </div>
-                                <a href="https://wa.me/5581995095151" class="btn btn--primary" target="_blank">
+                                <a href="https://wa.me/5581979008477" class="btn btn--primary" target="_blank">
                                     <i class="fab fa-whatsapp"></i>
                                     Agendar Combo
                                 </a>
@@ -79,8 +79,8 @@
                                         <li><i class="fas fa-check"></i> Retorno pós sessão</li>
                                     </ul>
                                 </div>
-                                <a href="https://wa.me/5581995095151" class="btn btn--primary" target="_blank">
-                                    <i class="fab fa-whatsapp"></i>
+                                <a href="https://wa.me/5581979008477" class="btn btn--primary" target="_blank">
+                                    <i class="fas fa-whatsapp"></i>
                                     Agendar Combo
                                 </a>
                             </div>
@@ -103,7 +103,7 @@
                                         <li><i class="fas fa-check"></i> SPA dos pés</li>
                                     </ul>
                                 </div>
-                                <a href="https://wa.me/5581995095151" class="btn btn--primary" target="_blank">
+                                <a href="https://wa.me/5581979008477" class="btn btn--primary" target="_blank">
                                     <i class="fab fa-whatsapp"></i>
                                     Agendar Combo
                                 </a>
