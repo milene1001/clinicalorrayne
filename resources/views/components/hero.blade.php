@@ -23,7 +23,7 @@
                     <div class="hero__buttons">
                         <a href="#about" class="btn btn--secondary btn-size m-2">
                             <i class="fas fa-user-md"></i>
-                            Conheça Nossa História
+                            Conheça Minha História
                         </a>
                         <a href="https://wa.me/5581979008477" class="btn btn--primary btn-size" target="_blank">
                             <i class="fab fa-whatsapp"></i>

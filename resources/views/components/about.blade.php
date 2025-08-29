@@ -1,8 +1,8 @@
         <section class="about section" id="about">
             <div class="container">
                 <div class="section__header">
-                    <h2 class="section__title">Sobre Nós</h2>
-                    <p class="section__subtitle">Conheça nossa história e missão</p>
+                    <h2 class="section__title">Sobre Mim</h2>
+                    <p class="section__subtitle">Conheça minha história e missão</p>
                 </div>
                 
                 <div class="about__content">
@@ -30,7 +30,7 @@
                         </div>
                     </div>
                     <div class="about__image">
-                        <img src="img/Lorrayne-about.jpeg" alt="Sobre Nós" width="100%" height="100%"> 
+                        <img src="img/Lorrayne-about.jpeg" alt="Sobre Nós"> 
                         <!-- <div class="about__placeholder">
                             <i class="fas fa-heart"></i>
                         </div> -->
